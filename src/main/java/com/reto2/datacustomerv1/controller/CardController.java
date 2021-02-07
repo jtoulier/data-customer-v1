@@ -1,5 +1,6 @@
 package com.reto2.datacustomerv1.controller;
 
+import com.reto2.datacustomerv1.dto.response.CardResponse;
 import com.reto2.datacustomerv1.repository.entity.CardEntity;
 import com.reto2.datacustomerv1.service.CardService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ public class CardController {
     private CardService cardService;
 
     @GetMapping("/card/{card-number}")
-    public ResponseEntity<CardEntity> findByCardNumber(
+    public ResponseEntity<CardResponse> findByCardNumber(
         @PathVariable("card-number") String cardNumber
     ) {
         return new ResponseEntity(cardService.findByCardNumber(cardNumber), HttpStatus.OK);
