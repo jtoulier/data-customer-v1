@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.reto2.datacustomerv1.DataCustomerV1ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.167 s - in com.reto2.datacustomerv1.DataCustomerV1ApplicationTests
